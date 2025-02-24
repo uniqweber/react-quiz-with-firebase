@@ -53,6 +53,8 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  place-items: center;
+  min-height: 65vh;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -64,9 +66,11 @@ h4 {
 /* signup component */
 .signup {
   height: 500px;
+  width: 100%;
 }
 
 /* login component */
 .login {
   height: 330px;
+  width: 100%;
 }
