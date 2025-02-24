@@ -1,16 +1,17 @@
 import Account from "./Account";
-import classes from '../../assets/css/Navbar.module.css'
-import logo from '../../assets/images/logo-bg.png'
+import classes from "../../assets/css/Navbar.module.css";
+import logo from "../../assets/images/logo-bg.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
     <nav className={classes.nav}>
       <ul>
         <li>
-          <a href="index.html" className={classes.brand}>
+          <Link to="/" className={classes.brand}>
             <img src={logo} alt="Learn with Sumit Logo" />
             <h3>Learn with Sumit</h3>
-          </a>
+          </Link>
         </li>
       </ul>
       <Account />

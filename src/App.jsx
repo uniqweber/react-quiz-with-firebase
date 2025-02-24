@@ -4,17 +4,22 @@ import Home from "./pages/home/Home";
 import Signup from "./pages/signup/Signup";
 import Quiz from "./pages/quiz/Quiz";
 import Result from "./pages/results/Result";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 const App = () => {
   return (
     <>
-      <Layout>
-        {/* <Home /> */}
-        {/* <Signup /> */}
-        {/* <Login /> */}
-        {/* <Quiz /> */}
-        <Result />
-      </Layout>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
+            <Route path="quiz" element={<Quiz />} />
+            <Route path="result" element={<Result />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </>
   );
 };

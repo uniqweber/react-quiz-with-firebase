@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import classes from "../../../assets/css/Form.module.css";
 import { Button, Checkbox, Input } from "../../../components/UI";
 
@@ -12,7 +13,7 @@ const SignupForm = () => {
       <Checkbox>I agree to the Terms & Conditions</Checkbox>
 
       <div className="info">
-        Already have an account? <a href="login.html">Login</a> instead.
+        Already have an account? <Link to="/login">Login</Link> instead.
       </div>
     </form>
   );
